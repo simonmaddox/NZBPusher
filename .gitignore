@@ -9,3 +9,6 @@ build/*
 # osx noise
 .DS_Store
 profile
+
+# Project Specific
+NZBPusher/Settings.plist
