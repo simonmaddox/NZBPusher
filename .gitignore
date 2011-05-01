@@ -11,4 +11,4 @@ build/*
 profile
 
 # Project Specific
-NZBPusher/Settings.plist
+Settings.plist
