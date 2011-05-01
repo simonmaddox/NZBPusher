@@ -77,6 +77,7 @@
 							<bool key="IBUIEnablesReturnKeyAutomatically">YES</bool>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
+						<int key="IBUIClearButtonMode">3</int>
 					</object>
 					<object class="IBUIButton" id="962798498">
 						<reference key="NSNextResponder" ref="191373211"/>
