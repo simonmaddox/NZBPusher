@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SearchViewController : UIViewController {
+@interface SearchViewController : UIViewController <UITextFieldDelegate> {
     
 	UITextField *searchField;
 }

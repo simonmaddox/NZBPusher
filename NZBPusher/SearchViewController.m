@@ -47,6 +47,13 @@
 	self.title = @"Search for NZB";
 }
 
+- (void) viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	
+	[self.searchField becomeFirstResponder];
+}
+
 - (void)viewDidUnload
 {
 	[self setSearchField:nil];
@@ -66,6 +73,12 @@
 	[webViewController setSearchString:[self.searchField.text urlEncodedString]];
 	[self.navigationController pushViewController:webViewController animated:YES];
 	[webViewController release];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+	[self search];
+	return NO;
 }
 
 @end
